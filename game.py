@@ -9,12 +9,12 @@ pygame.font.init()
 
 # set screen dimensions
 screen = pygame.display.set_mode((700, 600))
-pygame.display.set_caption("Word.io")
+pygame.display.set_caption("Wheel.io")
 
 # spin wheel func
 def spinWheel():
     # prizes array
-    prizes = ["$500 in debt", "Skipped, Loser", "Your broke", "Grandmas secret Mac&Cheese recipe", "A free application into the military", "A date with your highschool principal"]
+    prizes = ["Naruto", "Bleach", "One Piece", "Tokyo Ghoul", "JJK", "Akame ga kill"]
 
     # pick random prize
     prize_selected = random.choice(prizes)
@@ -26,7 +26,7 @@ def spinWheel():
 def showDash():
 # render dash text 
     welcome_text = pygame.font.SysFont('Comic Sans MS', 50)
-    text_surface = welcome_text.render('Welcome to Word.io', False, (255, 255, 255))
+    text_surface = welcome_text.render('Welcome to Wheel.io', False, (255, 255, 255))
     screen.blit(text_surface, (145,240))
 
     welcome_text = pygame.font.SysFont('Comic Sans MS', 30)
@@ -42,9 +42,9 @@ def showWheel():
 
 def displayResult(res):
     # render dash text 
-    res_text = pygame.font.SysFont('Comic Sans MS', 50)
-    text_surface = res_text.render(res, False, (0, 0, 0))
-    screen.blit(text_surface, (145,240))
+    res_text = pygame.font.SysFont('Comic Sans MS', 20)
+    text_surface = res_text.render(res, False, (255, 255, 255), (0, 0, 0))
+    screen.blit(text_surface, (300,300))
 
 # game loop
 # while loop
