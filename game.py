@@ -38,13 +38,13 @@ def showWheel():
 # load wheel 
     wheel_img = pygame.image.load("wheel.JPG")
     screen.fill((0, 0, 0))  
-    screen.blit(wheel_img, (50, 50)) 
+    screen.blit(wheel_img, (5, 115)) 
 
 def displayResult(res):
     # render dash text 
-    res_text = pygame.font.SysFont('Comic Sans MS', 20)
-    text_surface = res_text.render(res, False, (255, 255, 255), (0, 0, 0))
-    screen.blit(text_surface, (300,300))
+    res_text = pygame.font.SysFont('Comic Sans MS', 30)
+    text_surface = res_text.render(res, False, (255, 255, 255))
+    screen.blit(text_surface, (300,50))
 
 # game loop
 # while loop
