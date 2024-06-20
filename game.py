@@ -5,13 +5,11 @@ import random
 
 # initialize pygame 
 pygame.init()
+pygame.font.init()
 
 # set screen dimensions
-screen = pygame.display.set_mode((800, 600))
+screen = pygame.display.set_mode((700, 600))
 pygame.display.set_caption("Word.io")
-
-# load wheel 
-wheel_img = pygame.image.load("./assets/wheel.jpg")
 
 # spin wheel func
 def spinWheel():
@@ -24,8 +22,33 @@ def spinWheel():
     # return prize
     return prize_selected
 
+# display dashboard screen func
+def showDash():
+# render dash text 
+    welcome_text = pygame.font.SysFont('Comic Sans MS', 50)
+    text_surface = welcome_text.render('Welcome to Word.io', False, (255, 255, 255))
+    screen.blit(text_surface, (145,240))
+
+    welcome_text = pygame.font.SysFont('Comic Sans MS', 30)
+    text_surface = welcome_text.render('Press any key to continue!', False, (255, 255, 255))
+    screen.blit(text_surface, (195,300))
+
+# display wheel screen func
+def showWheel():
+# load wheel 
+    wheel_img = pygame.image.load("wheel.JPG")
+    screen.fill((0, 0, 0))  
+    screen.blit(wheel_img, (50, 50)) 
+
+def displayResult(res):
+    # render dash text 
+    res_text = pygame.font.SysFont('Comic Sans MS', 50)
+    text_surface = res_text.render(res, False, (0, 0, 0))
+    screen.blit(text_surface, (145,240))
+
 # game loop
 # while loop
+showDash() 
 active = True
 while active:
 
@@ -40,6 +63,8 @@ while active:
 
         # spin again
         if event.type == pygame.KEYDOWN:
+            pygame.display.update()
+            showWheel()
 
             # spin the wheel 
             if event.key == pygame.K_SPACE:
@@ -48,11 +73,8 @@ while active:
                 res = spinWheel()
 
                 # debug
-                print("Result:", res)  
-
-    # display results
-    screen.fill((255, 255, 255))  
-    screen.blit(wheel_img, (50, 50)) 
+                print("Result:", res)
+                displayResult(res)
 
     pygame.display.flip()
 
