@@ -1,3 +1,9 @@
+## Implement 
+##  - new dashboard with start button (use wheel.jpg)
+##  - user input (oppurtunity to add new list)
+##  - actual generated wheel (turtle draw wheel with spaces for each input)
+##  - wheel spin animation (spin wheel and slow to stop on result)
+
 # import libraries
 import pygame   
 import sys
