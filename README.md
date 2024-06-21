@@ -23,7 +23,7 @@
 
 ## Demo 
 
-![demo1](demo1.jpg)
+![output code](demo1.JPG)
 
 ## Test
 
