@@ -1,7 +1,7 @@
 # Wheel.io
 ## Description
     
-    This is Wheel.io, the console wheel picker, an engaging and interactive Python application that utilizes the Pygame library to create a virtual spinning wheel. The primary function of this application is to select a random option from a predefined list of choices, similar to a prize wheel. This project combines elements of game development, graphical interface design, and randomization techniques to provide a fun and useful tool for decision making.
+    This is Wheel.io, the console wheel picker, an engaging Python application that utilizes the Pygame library to create a simulation of a virtual spinning wheel. The primary function of this application is to select a random option from a predefined list of choices, similar to a prize wheel, my main inspiration whilst doing this project is that game and movie nights have less hassle because we can put our options to the wheel. This project combines elements of game development, graphical interface design, and randomization techniques to provide a fun and useful tool for decision making.
 
 ## Table of Contents
 
@@ -17,7 +17,7 @@
 
 ## Usage
     
-    Users can enter there options to spin and see the wheel spin in real time gradually slowing to select a random choice
+    Users can enter their options to spin and see the resulting random choice displayed.
 
 ## Installation
 
