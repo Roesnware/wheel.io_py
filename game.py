@@ -6,12 +6,12 @@
 
 # import libraries
 import pygame   
-import sys
-import random
+import sys 
+import random 
 
 # initialize pygame 
-pygame.init()
-pygame.font.init()
+pygame.init() 
+pygame.font.init() 
 
 # set screen dimensions
 screen = pygame.display.set_mode((700, 600))
