@@ -23,7 +23,7 @@
 
 ## Demo 
 
-![demo1](jate_demo.gif)
+![demo1](demo1.jpg)
 
 ## Test
 
